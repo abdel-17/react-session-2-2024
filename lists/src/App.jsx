@@ -16,7 +16,7 @@ export function App() {
 		<div>
 			<h1>Todo List</h1>
 			<AddTodo onAdd={onAddTodo} />
-			<div className="app-todos">
+			<div className="todo-list">
 				{todos.map((todo) => (
 					<TodoItem key={todo.id} todo={todo} onRemove={onRemoveTodo} />
 				))}
@@ -27,8 +27,8 @@ export function App() {
 
 function TodoItem({ todo, onRemove }) {
 	return (
-		<div className="app-todos__item">
-			<p className="app-todos__item__title">{todo.title}</p>
+		<div className="todo-list__item">
+			<p className="todo-list__title">{todo.title}</p>
 			<button onClick={() => onRemove(todo)}>Delete</button>
 		</div>
 	);
@@ -46,7 +46,7 @@ function AddTodo({ onAdd }) {
 	}
 
 	return (
-		<form className="app-add-todo" onSubmit={handleSubmit}>
+		<form className="add-todo-form" onSubmit={handleSubmit}>
 			<input
 				type="text"
 				value={title}

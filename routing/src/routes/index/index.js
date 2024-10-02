@@ -1,0 +1,1 @@
+export { indexLoader } from "./loader";

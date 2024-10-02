@@ -1,4 +1,4 @@
-.app-todos {
+.todo-list {
 	display: flex;
 	flex-direction: column;
 	gap: 8px;
@@ -8,16 +8,16 @@
 	}
 }
 
-.app-todos__item {
+.todo-list__item {
 	display: flex;
 }
 
-.app-todos__item__title {
+.todo-list__title {
 	margin: 0;
 	margin-right: 4px;
 }
 
-.app-add-todo {
+.add-todo-form {
 	display: flex;
 	gap: 4px;
 }
