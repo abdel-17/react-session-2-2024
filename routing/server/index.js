@@ -1,7 +1,10 @@
+import cors from "cors";
 import express from "express";
 import products from "./products.json" with { type: "json" };
 
 const app = express();
+
+app.use(cors());
 
 app.get("/products", (req, res) => {
 	res.json(products);
