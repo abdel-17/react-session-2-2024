@@ -1,0 +1,23 @@
+.app-todos {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+
+	&:not(:empty) {
+		margin-top: 24px;
+	}
+}
+
+.app-todos__item {
+	display: flex;
+}
+
+.app-todos__item__title {
+	margin: 0;
+	margin-right: 4px;
+}
+
+.app-add-todo {
+	display: flex;
+	gap: 4px;
+}
